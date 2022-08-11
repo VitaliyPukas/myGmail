@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.conteiner {
+    padding: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Хедер початок */
+
+header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid slategray;
+}
+
+.hedL {
+    width: 45%;
+    height: 100%;
+    float: left;
+    display: block;
+}
+
+.hedL img {
+    width: 40px;
+    margin: 10px;
+    float: left;
+}
+
+.logoT {
+    margin-top: 20px;
+    float: left;
+}
+
+.hedR {
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+.mail {
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.mailIco img {
+    width: 40px;
+    float: right;
+    margin: 10px;
+}
+
+/* Хедер кінець */
+
+
+.content {
+    margin-top: 10px;
+}
+
+/* Початок меню */
+.nav {
+    width: 20%;
+    float: left;
+    clear: both;
+
+}
+
+li {
+    display: block;
+    margin-right: 20%;
+
+}
+
+.no55:hover {
+    background-color: rgb(211, 210, 208);
+
+}
+
+.mainNav a {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: left center;
+    padding: 10px 0 10px 40px;
+}
+
+.mainNav a:hover span {
+    background-color: rgb(211, 210, 208);
+}
+
+.mainItem1 {
+    background-image: url(img/incom.png);
+}
+
+.mainItem2 {
+    background-image: url(img/outcom.png);
+}
+
+.mainItem3 {
+    background-image: url(img/draft.png);
+}
+
+.mainItem4 {
+    background-image: url(img/spam.png);
+}
+
+/* Кінець меню */
+
+.mainNav a span:hover {
+    background-color: rgb(211, 210, 208);
+}
+
+/* Початок таблиці */
+.tab {
+    width: calc(80% - 10px);
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 500px;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table img {
+    margin: auto;
+    display: block;
+}
+
+.tab td {
+    border-bottom: 1px solid silver;
+    padding: 10px 0;
+}
+
+td:nth-child(1) {
+    width: 5%;
+}
+
+td:nth-child(2) {
+    width: 15%;
+}
+
+td:nth-child(3) {
+    width: 50%;
+}
+
+td:nth-child(4) {
+    width: 5%;
+}
+
+td:nth-child(5) {
+    width: 10%;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.textOp {
+    opacity: 0.5;
+}
+
+.ollNo {
+    display: none;
+}
+
+/* Кінель таблиці */
+
+
+@media (max-width:800px) {
+    td:nth-child(2) {
+        width: 15%;
+        display: none;
+    }
+
+    .text {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+
+    .ollNo {
+        display: block;
+        font-weight: 700;
+    }
+
+    .twe {
+        width: 15px;
+        position: relative;
+        top: -7px
+    }
+
+    .tre {
+        width: 15px;
+        position: relative;
+        top: -17px
+    }
+}
+
+@media (max-width:550px) {
+    .mainNav span {
+        display: none;
+    }
+
+    .nav {
+        width: 20%;
+        float: left;
+        clear: both;
+
+    }
+
+    li {
+        display: block;
+        margin-right: 0;
+
+    }
+
+    .mainNav a {
+
+        display: block;
+        margin-top: 10px;
+        margin-left: 40%;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: left center;
+        padding: 20px 0;
+    }
+
+}
